@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+
+<body>
+    <p>Define o alinhamento individual de um item;</p>
+    <p>auto: respeita a definição do container.</p>
+
+    <h1>Auto: unset</h1>
+    <section class="flex-container">
+        <div class="item">123</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit reprehenderit veritatis</div>
+        <div class="item">AAA</div>
+        <div class="item">ITEM 4 </div>
+    </section>
+
+    <h1>Auto: center-container</h1>
+    <section class="flex-container align-container">
+        <div class="item">123</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit reprehenderit veritatis</div>
+        <div class="item">AAA</div>
+        <div class="item">ITEM 4 </div>
+    </section>
+
+    <h1>Auto: center-container; item override</h1>
+    <section class="flex-container align-container">
+        <div class="item baseline">123</div>
+        <div class="item auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit reprehenderit veritatis</div>
+        <div class="item  flex-start">AAA</div>
+        <div class="item flex-end">ITEM 4 </div>
+    </section>
+
+    <h1>Column</h1>
+
+    <h1>Auto: unset</h1>
+    <section class="flex-container flex-direction-column">
+        <div class="item">123</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit reprehenderit veritatis</div>
+        <div class="item">AAA</div>
+        <div class="item">ITEM 4 </div>
+    </section>
+
+    <h1>Auto: center-container</h1>
+    <section class="flex-container flex-direction-column align-container">
+        <div class="item">123</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit reprehenderit veritatis</div>
+        <div class="item">AAA</div>
+        <div class="item">ITEM 4 </div>
+    </section>
+
+    <h1>Auto: center-container; item override</h1>
+    <section class="flex-container flex-direction-column align-container">
+        <div class="item baseline">123</div>
+        <div class="item auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit reprehenderit veritatis</div>
+        <div class="item  flex-start">AAA</div>
+        <div class="item flex-end">ITEM 4 </div>
+    </section>
+
+</body>
+
+</html>

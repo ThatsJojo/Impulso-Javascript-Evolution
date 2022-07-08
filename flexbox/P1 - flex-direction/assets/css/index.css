@@ -1,0 +1,78 @@
+body {
+    background-color: #333;
+}
+
+.item {
+    background-color: aqua;
+    margin: 5px;
+}
+
+.flex {
+    max-width: 300px;
+    height: 200px;
+    padding: 10px;
+    border: 2px solid black;
+    display: flex;
+    /* Torna a classe um Flex Container. Os filhos imediatos serão flex-items */
+    flex-direction: column-reverse;
+    /* Define o eixo de inserção dos flex-items no container.
+        row or column (podem ter reverse para início left ou bottom, respectivamente);*/
+}
+
+.flex-container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+.flex-item {
+    background-color: blue;
+    height: 50px;
+    width: 50px;
+    /* Centralizar verticalmente o texto */
+    line-height: 50px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin: 5px;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.column {
+    flex-direction: column;
+    /* Atenção float */
+    float: left;
+}
+
+.column li {
+    background-color: orange;
+}
+
+.column-reverse {
+    /* Atenção float */
+    float: right;
+    flex-direction: column-reverse;
+}
+
+
+/* same as .column-reverse li */
+
+.column-reverse .flex-item {
+    background-color: blueviolet;
+}
+
+.row-reverse li {
+    background-color: red;
+}
+
+.flex-direction {
+    max-width: 320px;
+}

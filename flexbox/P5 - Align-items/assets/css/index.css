@@ -1,0 +1,79 @@
+body {
+    background-color: #333;
+}
+
+.container {
+    max-width: 350px;
+    border: 1px solid black;
+    display: flex;
+}
+
+.item {
+    background-color: blueviolet;
+    border: 2px dashed black;
+    margin: 5px;
+    color: white;
+    text-align: center;
+    flex: 1;
+}
+
+.flex {
+    flex: 1;
+}
+
+.column {
+    flex-direction: column;
+}
+
+
+/* 
+    Alinha os itens com relação ao eixo. (eixo vertical => todos à esquerda do eixo, à direita, etc.)
+    alinha os itens com relação ao eixo do flex container 
+    itens "flutuam" sobre o eixo.
+
+    Strectch estiga o conteúdo para o maior item.
+*/
+
+.center {
+    align-items: center;
+}
+
+.strectch {
+    align-items: stretch;
+}
+
+.flex-start {
+    align-items: flex-start;
+}
+
+.flex-end {
+    align-items: flex-end;
+}
+
+
+/* Alinha o conteúdo para que a primeira linha tenha base na mesma altura */
+
+.baseline {
+    align-items: baseline;
+}
+
+
+/* Seleciona, dentro de elementos da classe .baseline, uma div que seja o primeiro filho de seu pai */
+
+.baseline div:first-child {
+    padding-top: 40px;
+}
+
+.baseline.column div:first-child {
+    padding: 40px;
+}
+
+.central {
+    height: 500px;
+    justify-content: center;
+}
+
+.central .item {
+    flex: 0;
+    padding: 20px;
+}

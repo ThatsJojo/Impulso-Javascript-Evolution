@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document - flex basis</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+
+<body>
+    <p>Flex-basis define o tamanho inicial do flex-item. Seta o tamanho da content-box.</p>
+    <h1>basis-auto</h1>
+    <p>Crescimento é calculado com base no espaço restante. Calculao realizado </p>
+    <p>sem levar em conta o width do conteúdo. Divide o espaço restante com a proporção do grow.</p>
+    <p>width do conteúdo das divs abaixo: 11,56px, 32,02px, 10,67px, 30,23px; TOTAL: 84,48</p>
+    <P>Container 300px => Excedente de 215,52-bordas(40) = 175,52; $/5 = 35,104 </P>
+    <p>Teórico: 46,66; 67,124; 45,774; 2*35,104+30,23 = 100,438 </p>
+    <p>width das divs abaixo: 46px, 67px, 45px, 100px</p>
+    <div class="flex-container">
+        <div class="item basis-auto fg-1">A</div>
+        <div class="item basis-auto fg-1">BBB</div>
+        <div class="item basis-auto fg-1">C</div>
+        <div class="item basis-auto fg-2">DEF</div>
+    </div>
+
+    <h1>basis-0</h1>
+    <p>Divide o espaço restante de modo a manter width proporcional para todos os elementos</p>
+    <p>Leva em consideração o tamanho do conteúdo</p>
+    <p>Teórico: 300-borda(40) = 260/5 = 52</p>
+    <p>width das divs abaixo: 52px, 52px, 52px, 104px</p>
+    <div class="flex-container">
+        <div class="item basis-0 fg-1">A</div>
+        <div class="item basis-0 fg-1">BBB</div>
+        <div class="item basis-0 fg-1">C</div>
+        <div class="item basis-0 fg-2">DEF</div>
+    </div>
+
+    <h1>Flex-basis: 100px;</h1>
+    <div class="flex-container ">A</div>
+    <div class="item flex-basis-100 fg-1">BBB</div>
+    <div class="item flex-basis-100 fg-1">C</div>
+    <div class="item flex-basis-100 fg-10">DEF</div>
+    </div>
+</body>
+
+</html>

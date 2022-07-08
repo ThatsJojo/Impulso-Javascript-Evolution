@@ -1,0 +1,50 @@
+body {
+    background-color: #333;
+}
+
+.container {
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    height: 350px;
+    max-width: 300px;
+}
+
+.item {
+    border: 1px dashed black;
+    background-color: orangered;
+    padding: 0 5px;
+    flex: 1;
+    text-align: center;
+    color: white;
+    margin: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.stretch {
+    align-content: stretch;
+}
+
+.center {
+    align-content: center;
+}
+
+.flex-start {
+    align-content: flex-start;
+}
+
+.flex-end {
+    align-content: flex-end;
+}
+
+.space-around {
+    align-content: space-around;
+}
+
+.space-between {
+    align-content: space-between;
+}

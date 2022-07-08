@@ -1,0 +1,43 @@
+body {
+    background-color: #333;
+}
+
+.container {
+    max-width: 400px;
+    border: 1px solid black;
+    margin: 0;
+    display: flex;
+}
+
+.item {
+    background-color: blueviolet;
+    margin: 5px;
+    text-align: center;
+    color: white;
+}
+
+.flex-start {
+    justify-content: flex-start;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.center {
+    justify-content: center;
+}
+
+
+/* space-start e space-end zerados */
+
+.space-between {
+    justify-content: space-between;
+}
+
+
+/* space-start e space-end iguais à metade do .space-between */
+
+.space-around {
+    justify-content: space-around;
+}

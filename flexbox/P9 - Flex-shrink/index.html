@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/indes.css">
+</head>
+
+<body>
+    <p>Flex-shrink estabelece a capacidade de um flex-item ser reduzido ou comprimido.</p>
+    <h1>flex-shrink 1</h1>
+    <div class="flex-container">
+        <div class="item flex-shrink-1 flex-grow-1">A</div>
+        <div class="item flex-shrink-1 flex-grow-1">B</div>
+        <div class="item flex-shrink-1 flex-grow-1">C</div>
+        <div class="item flex-shrink-1 flex-grow-1">D</div>
+        <div class="item flex-shrink-1 flex-grow-1">E</div>
+    </div>
+
+    <p>flex-shrink:1; é o padrão. Permite que os elementos sejam reduzidos até o tamanho de seu conteúdo.</p>
+
+    <h1>flex-shrink 1</h1>
+    <div class="flex-container">
+        <div class="item flex-shrink-1 flex-grow-1">A</div>
+        <div class="item flex-shrink-1 flex-grow-1">Box maior Bom bem maior</div>
+        <div class="item flex-shrink-1 flex-grow-1">C</div>
+        <div class="item flex-shrink-1 flex-grow-1">D</div>
+        <div class="item flex-shrink-1 flex-grow-1">E</div>
+    </div>
+
+    <h1>flex-shrink 0</h1>
+    <p>flex-shrink: 0; diz que o container não pode ser reduzido.</p>
+    <p> OBS: grow continua a fundioar</p>
+    <div class="flex-container">
+        <div class="item flex-shrink-0 flex-grow-1">A</div>
+        <div class="item flex-shrink-0 flex-grow-1">Box maior Bom bem maior</div>
+        <div class="item flex-shrink-0 flex-grow-1">C</div>
+        <div class="item flex-shrink-0 flex-grow-1">D</div>
+        <div class="item flex-shrink-0 flex-grow-1">E</div>
+    </div>
+
+    <h1>flex-shrink n;</h1>
+    <p>n representa a quantidade de flex-basis em que pode ser reduzido o item</p>
+
+    <p> OBS: grow continua a fundioar</p>
+    <div class="flex-container">
+        <div class="item flex-shrink-1 flex-grow-1">A</div>
+        <div class="item flex-shrink-3 flex-grow-1">Box maior Bom bem maior</div>
+        <div class="item flex-shrink-1 flex-grow-1">C</div>
+        <div class="item flex-shrink-2 flex-grow-1">D</div>
+        <div class="item flex-shrink-3 flex-grow-1">E</div>
+    </div>
+
+
+</body>
+
+</html>
